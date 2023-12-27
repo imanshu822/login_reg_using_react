@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(to top, #48c6ef 0%, #6f86d6 100%);
+  background-blend-mode: multiply, multiply;
+  background-size: cover;
+  background-position: center;
+}
+.side-bar {
+  z-index: 100;
+}
+.blur {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(500px);
+  -webkit-backdrop-filter: blur(500px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+.container .area {
+  margin-left: 110px;
+}
+.area .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: calc(100vw - 110px);
+  height: 50px;
+}
+.header .search {
+  display: flex;
+}
+.search input {
+  margin: 0;
+  width: 400px;
+  height: 42px;
+}
+.search button {
+  margin: 0;
+  width: 85px;
+  height: 42px;
+}
+.header .breadcrumb {
+  display: flex;
+}
+
+.box-one {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+.box-one .left {
+  width: 80%;
+}
+.left .top {
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.left .top .report-incident {
+}
+.left .bottom {
+  height: 70%;
+  width: 100%;
+  display: flex;
+}
+.bottom .bleft {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.bottom .bright {
+  width: 50%;
+  height: 100%;
+}
+.box-one .right {
+  width: 20%;
+}
+.footer {
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
